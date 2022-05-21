@@ -1,6 +1,6 @@
 # 필 독
 
-### commit
+## commit
 
 - Project폴더의 경우 자신이 어떤 부분을 구현하였는지에 대하여 commit message에 자세하게 작성 한 후 push한다.
   이후 카톡방에 본인이 push했음을 카톡방에 알린다.
@@ -10,7 +10,7 @@
 
 ---
 
-##### root풀더에는 Project Folder와 Study Folder가 있다.
+#### root풀더에는 Project Folder와 Study Folder가 있다.
 
 - AppDong_Web_Project_Team2
   - Project
@@ -18,7 +18,7 @@
 
 ---
 
-### Project
+## Project
 
 - Project
   - html
@@ -32,7 +32,7 @@ c.f) media는 이미지 파일이 들어가는 폴더이다.
 
 ---
 
-### Study
+## Study
 
 - Study
   - HeeWon
