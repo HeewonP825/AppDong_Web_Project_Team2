@@ -12,7 +12,7 @@ var client=mysql.createConnection({
 
 var app=express();
 app.use(bodyParser.urlencoded({
-    extended:false;
+    extended:false
 }));
 
 
@@ -20,26 +20,32 @@ app.listen(9999,function(){
     console.log('Server is running at local');
 });
 
-app.get('/',funtion(request,response){
+app.get('/',function(request,response){
+    fs.readFile('list.html','utf8',function(error,data){
+        client.query('SELECT * FROM PRODUCTS',function(error,result){
+            response.send(ejs.render(data,{
+                data:results
+            }));
+        });
+    });
+});
+
+app.get('/delete/:id',function(request,response){
 
 });
 
-app.get('/delete/:id',funtion(request,response){
+app.get('/insert',function(request,response){
 
 });
 
-app.get('/insert',funtion(request,response){
+app.post('/insert',function(request,response){
 
 });
 
-app.post('/insert',funtion(request,response){
+app.get('/edit/:id',function(request,response){
 
 });
 
-app.get('/edit/:id',funtion(request,response){
-
-});
-
-app.post('/edit/:id',funtion(request,response){
+app.post('/edit/:id',function(request,response){
 
 });
