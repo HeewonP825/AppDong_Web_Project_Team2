@@ -64,10 +64,12 @@ app.get('/store/restaurant_info',function(request,response){
         if(error){
             console.log('쿼리 문장에 오류가 있습니다.');
         }else{
-            //console.dir(result);
             response.json(result);
+            console.dir(result[0].name);
+            console.log('데이터 보냈음^^');
         }
     });
+    console.log('정상 데이터 송신 완료');
 });
 
 app.get('/Project/html/minuk_test.html',function(request,response){
