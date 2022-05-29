@@ -1,6 +1,7 @@
 const bodyParser = require('body-parser');
 var express=require('express');
 var fs=require('fs');
+var mysql=require('mysql');
 
 var app=express();
 
@@ -11,6 +12,16 @@ app.use(bodyParser.urlencoded({
 app.listen(9999,function(){
     console.log('Server is running');
 })
+
+
+var client=mysql.createConnection({
+    user:'root',
+    password:'vcxz4941@'
+});
+
+client.query('USE asheley_db');
+
+
 
 app.get('/',function(request,response){
     fs.readFile('./html/index.html','utf-8',function(error,data){
@@ -41,14 +52,25 @@ app.get('/store',function(request,response){
     })
 });
 
-// store페이지를 post로 받아오면 조건에 맞게 database set을 보내준다.
-app.post('/store',function(request,response){
-    fs.readFile('./html/delivery.html','utf-8',function(error,data){
+//store페이지를 get으로 받아오면 조건에 맞게 database set을 보내준다.
+app.get('/store/restaurant_info',function(request,response){
+    client.query('SELECT * FROM RESTAURANT_INFO',function(error,result,fields){
         if(error){
-            console.log('Loading delevery.html is failed');
+            console.log('쿼리 문장에 오류가 있습니다.');
+        }else{
+            //console.dir(result);
+            response.json(result);
+        }
+    });
+});
+
+app.get('/Project/html/minuk_test.html',function(request,response){
+    fs.readFile('../html/minuk_test.html','utf-8',function(error,data){
+        if(error){
+            console.log('Loading minuk_test.html is failed');
         }
         response.send(data);
     })
-});
+})
 
 
