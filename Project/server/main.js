@@ -2,8 +2,14 @@ const bodyParser = require('body-parser');
 var express=require('express');
 var fs=require('fs');
 var mysql=require('mysql');
+var path=require('path');
 
 var app=express();
+// 정적 파일 로드하기.
+app.use(express.static(path.join(__dirname,'../javascript')));
+console.log(path.join(__dirname,'../javascript'));
+
+
 
 app.use(bodyParser.urlencoded({
     extended:false
@@ -24,7 +30,7 @@ client.query('USE asheley_db');
 
 
 app.get('/',function(request,response){
-    fs.readFile('./html/index.html','utf-8',function(error,data){
+    fs.readFile('../html/index.html','utf-8',function(error,data){
         if(error){
             console.log('Loading index.html is failed');
         }
@@ -34,7 +40,7 @@ app.get('/',function(request,response){
 
 
 app.get('/delevery',function(request,response){
-    fs.readFile('./html/delivery.html','utf-8',function(error,data){
+    fs.readFile('../html/delevery.html','utf-8',function(error,data){
         if(error){
             console.log('Loading delevery.html is failed');
         }
@@ -44,7 +50,7 @@ app.get('/delevery',function(request,response){
 
 // store get으로 받아오면 기본적인 방법으로 database set을 보내주면된다.
 app.get('/store',function(request,response){
-    fs.readFile('./html/delivery.html','utf-8',function(error,data){
+    fs.readFile('../html/delivery.html','utf-8',function(error,data){
         if(error){
             console.log('Loading delevery.html is failed');
         }
