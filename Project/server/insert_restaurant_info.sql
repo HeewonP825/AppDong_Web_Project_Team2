@@ -198,4 +198,135 @@ insert into restaurant_info (name,tele,state,address,has_parking,seat,holiday,re
     null,
     7);
     
+INSERT INTO RESTAURANT_INFO (NAME,STATE,ADDRESS,TELE,operation_time_id,price_id,has_parking,holiday,seat,restaurant_service,restaurant_type) 
+ VALUES ('퀸즈광주유스퀘어',
+	'광주',
+    '광주 서구 무진대로904스퀘어',
+    '062-352-1031',
+    6,
+    3,
+    '공영주차장',
+    '연중무휴',
+    300,
+    8,
+    0);
+    
+    INSERT INTO RESTAURANT_INFO (NAME,STATE,ADDRESS,TELE,operation_time_id,price_id,has_parking,holiday,seat,restaurant_service,restaurant_type) 
+ VALUES ('퀸즈 뉴코아 강남점',
+	'서울',
+    '잠원로 51 뉴코아아울렛 강남점 1관 5층 애슐리퀸즈',
+    '02-6082-1031',
+    1,
+    3,
+    '유통 주차장',
+    '유통점 휴무일',
+    162,
+    3,
+    0);
+
+ INSERT INTO RESTAURANT_INFO (NAME,STATE,ADDRESS,TELE,operation_time_id,price_id,has_parking,holiday,seat,restaurant_service,restaurant_type) 
+ VALUES ('퀸즈 뉴코아 부천점',
+	'경기도',
+    '송내대로 239 (상동) 부천뉴코아아울렛 4층',
+    '032-624-8401',
+    1,
+    3,
+    '뉴코아 아울렛 주차장',
+    '설날 당일, 추석당일',
+    340,
+    9,
+    0);
+
+INSERT INTO RESTAURANT_INFO (NAME,STATE,ADDRESS,TELE,operation_time_id,price_id,has_parking,holiday,seat,restaurant_service,restaurant_type) 
+ VALUES ('퀸즈 뉴코아 인천점',
+	'인천',
+    '인하로 485뉴코아 아울렛 인천점 9층',
+    '032-441-1033',
+    1,
+    3,
+    '아울렛 주차장',
+    '뉴코아 아울렛 휴무일',
+    236,
+    5,
+    0);
+    
+    INSERT INTO RESTAURANT_INFO (NAME,STATE,ADDRESS,TELE,operation_time_id,price_id,has_parking,holiday,seat,restaurant_service,restaurant_type) 
+ VALUES ('퀸즈 뉴코아 평촌점',
+	'경기도',
+    '동안로 119 (호계동) 평촌뉴코아아울렛 10층',
+    '031-382-1443',
+    1,
+    3,
+    '뉴코아 아울렛 주차장',
+    '뉴코아 아울렛 휴무일',
+    197,
+    4,
+    0);
+    
+     
+    
+     INSERT INTO RESTAURANT_INFO (NAME,STATE,ADDRESS,TELE,operation_time_id,price_id,has_parking,holiday,seat,restaurant_service,restaurant_type) 
+ VALUES ('퀸즈 롯데몰 수지점',
+	'경기도',
+    '성복2로 38 롯데몰 수지점 4층 애슐리',
+    '031-5174-4431',
+    1,
+    3,
+    '없음',
+    '연중무휴',
+    186,
+    1,
+    0);
+    
+    INSERT INTO RESTAURANT_INFO (NAME,STATE,ADDRESS,TELE,operation_time_id,price_id,has_parking,holiday,seat,restaurant_service,restaurant_type) 
+ VALUES ('퀸즈 롯데몰 은평점',
+	'서울',
+    '통일로 1050, 롯데몰 은평점 4층',
+    '02-6975-5227',
+    1,
+    3,
+    '없음',
+    '연중무휴',
+    214,
+    5,
+    0);
+    
+    INSERT INTO RESTAURANT_INFO (NAME,STATE,ADDRESS,TELE,operation_time_id,price_id,has_parking,holiday,seat,restaurant_service,restaurant_type) 
+ VALUES ('퀸즈 롯데백화점 김포공항점',
+	'서울',
+    '하늘길 38 , 롯데백화점 5층 애슐리퀸즈',
+    '02-6116-3553',
+    1,
+    3,
+    '공영주차장',
+    '백화점 휴무일',
+    284,
+    1,
+    0);
+    
+    INSERT INTO RESTAURANT_INFO (NAME,STATE,ADDRESS,TELE,operation_time_id,price_id,has_parking,holiday,seat,restaurant_service,restaurant_type) 
+ VALUES ('퀸즈 미아사거리역점',
+	'서울',
+    '도봉로 52 y-square 5층',
+    '02-6415-0041',
+    1,
+    3,
+    'y-square 주차장',
+    '매주 3주째 월요일',
+    344,
+    2,
+    1);
+    
+    INSERT INTO RESTAURANT_INFO (NAME,STATE,ADDRESS,TELE,operation_time_id,price_id,has_parking,holiday,seat,restaurant_service,restaurant_type) 
+ VALUES ('퀸즈 서울대입구점',
+	'서울',
+    '남부순환로 1820(봉천동) 라붐아울렛 9층',
+    '02-6276-8200',
+	1,
+    3,
+    '라붐 아울렛 주차장',
+    '연중무류',
+    280,
+    3,
+    0);
 select * from restaurant_info;
