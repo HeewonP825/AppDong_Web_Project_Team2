@@ -7,7 +7,9 @@ function getAPI(){
             console.log(response);
             response.json();
         })
-        .then(console.log);
+        .then(data=>{
+            console.log(data);
+        });
 }
 
 getAPI();

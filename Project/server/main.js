@@ -65,7 +65,6 @@ app.get('/store/restaurant_info',function(request,response){
             console.log('쿼리 문장에 오류가 있습니다.');
         }else{
             response.json(result);
-            console.dir(result[0].name);
             console.log('데이터 보냈음^^');
         }
     });
