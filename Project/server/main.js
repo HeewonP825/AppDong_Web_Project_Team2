@@ -7,6 +7,7 @@ var path=require('path');
 var app=express();
 // 정적 파일 로드하기.
 app.use(express.static(path.join(__dirname,'../javascript')));
+app.use(express.static(path.join(__dirname,'../style/css')));
 console.log(path.join(__dirname,'../javascript'));
 
 
