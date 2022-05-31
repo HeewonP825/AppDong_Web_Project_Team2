@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="/minuks_test.js"></script>
+    <!--<script type="text/javascript" src="/minuks_test.js"></script>-->
     <title>API TEST</title>
 </head>
 <body>
+    <script>
+        function getAPI(){
+            const url=`http://127.0.0.1:9999/store/restaurant_info`;
+            const json=fetch(url)
+                .then(function(response){
+                    return response.json();
+                })
+                .then(function(data){
+                const restaurant_name=data[0].name;
+                const state=data[0].state;
+
+                const nameContainer=document.querySelector('#restaurant span:first-child');
+                const stateContainer=document.querySelector('#restaurant span:last-child');
+                nameContainer.innerHTML=restaurant_name;
+                stateContainer.innerHTML=state;
+                    console.log("data",data[0]);
+                });
+                
+        }
+
+        getAPI();        
+    </script>
     <h1>Test</h1>
     <div id="restaurant">
-        <span></span>
+        <span></span><br>
         <span></span>
     </div>
 </body>

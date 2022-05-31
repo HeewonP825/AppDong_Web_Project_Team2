@@ -82,3 +82,13 @@ app.get('/Project/html/minuk_test.html',function(request,response){
 })
 
 
+app.get('/my-route', function(request, response, next) {
+
+    response.sendFile(require('path').join(__dirname, '../html/minuk_test.html'), function(err) {
+        if (err) {
+            next(err)
+        } else {
+            console.log('Sent:', "/minuk_test.html")
+        }
+    });
+});
