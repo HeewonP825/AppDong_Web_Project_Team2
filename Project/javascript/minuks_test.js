@@ -11,6 +11,7 @@ function getAPI(){
             console.log(data[0]);
         });
 }
+
 getAPI();
 
 // event listener page load -> getAPI라는 함수를 실행시켜라
