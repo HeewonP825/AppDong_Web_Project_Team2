@@ -1,0 +1,122 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="STOREcss.css">
+ </head>
+  <body>
+    <Topmenu>    
+      <div class = "Top">
+        <span id = "Top_h1">ASHLEY</span>
+        <input type = "button" value = "STORE" id = "Top_btn1" onclick = "Btn_STORE()" />
+        <input type = "button" value = "QUEENS" id = "Top_btn1" onclick = "Btn_QUEENS()" />
+        <input type = "button" value = "SEASON MENU" id = "Top_btn2" onclick = "Btn_SEASONMENU()" />
+        <input type = "button" value = "DELIVERY" id = "Top_btn1" onclick = "Btn_DELIVERY()" />
+        <input type = "button" value = "HOMESTAURANT" id = "Top_btn2" onclick = "Btn_HOMESTAURANT()" />
+        <input type = "button" value = "SHLEYZ" id = "Top_btn1" onclick = "Btn_SHLEYZ()" />
+        <input type = "button" value = "로그인" id = "Top_btn3" onclick = "Btn_Login()" />
+        <input type = "button" value = "회원가입" id = "Top_btn4" onclick = "Btn_AT()" />
+      </div>
+    </Topmenu>
+    <Mainmenu>
+      <div class = "Container">
+        <div class = "Area_1">
+          <span id = "Area1_h1">STORE</span>
+          <span id = "Area1_h2">GUIDE</span>
+        </div>
+        <div class = "Area_2">
+          <form method = "get" action = "./store/restaurant_info">
+            <p id = "Area_2_p1">매장타입</p>
+            <input type = "checkbox" name = "Storetype" value = "DELIVERY" id = "Area_2_cb1"><label id = "cb1_l1">DELIVERY</label>
+            <input type = "checkbox" name = "Storetype" value = "AHSLEYQUEENS" id = "Area_2_cb1"><label id = "cb1_l1">ASHLEY QUEENS</label>
+            <hr id = "Area_2_hr1"></hr>
+            <p id = "Area_2_p2">서비스 타입</p>
+            <input type = "checkbox" name = "Servicetype" value = "WINE" id = "Area_2_cb1"><label id = "cb1_l1">와인 무제한</label>
+            <input type = "checkbox" name = "Servicetype" value = "BEER" id = "Area_2_cb1"><label id = "cb1_l1">생맥주 무제한</label>
+            <input type = "checkbox" name = "Servicetype" value = "DELIVERY" id = "Area_2_cb1"><label id = "cb1_l1">딜리버리</label>
+            <input type = "checkbox" name = "Servicetype" value = "KIDSROOM" id = "Area_2_cb1"><label id = "cb1_l1">키즈룸</label>
+            <hr id = "Area_2_hr2"></hr>
+            <p id = "Area_2_p3">지역 찾기</p>
+            <select name = "Findarea" id = Area_2_s1>
+              <option value = "1">광역시/도</option>
+              <option value = "2">서울</option>
+              <option value = "3">경기도</option>
+              <option value = "4">인천</option>
+              <option value = "5">강원도</option>
+              <option value = "6">충청북도</option>
+              <option value = "7">충청남도</option>
+              <option value = "8">대전</option>
+              <option value = "9">경상북도</option>
+              <option value = "10">대구</option>
+              <option value = "11">경상남도</option>
+              <option value = "12">부산</option>
+              <option value = "13">울산</option>
+              <option value = "14">세종</option>
+              <option value = "15">전라북도</option>
+              <option value = "16">전라남도</option>
+              <option value = "17">광주</option>
+              <option value = "18">제주도</option>
+            </select>
+            <select name = "FINDSTORE" id = Area_2_s1>
+              <option value = "18">매장선택</option>
+            </select>
+            <hr id = "Area_2_hr3"></hr>
+            <p id = "Area_2_p4">매장명 찾기</p>
+            <input type = "text" name = "Findstore" id = "Area_2_t1"><label></label>
+          </form>
+        </div>
+        <div class = "Area_3">
+          <table id = "Area_3_table">
+            <tr>
+              <td id = "td_1_1">매장명</td>
+              <td id = "td_1_2">전화번호</td>
+              <td id = "td_1_3">주소</td>
+              <td id = "td_1_4">영업시간</td>
+              <td id = "td_1_5">가격</td>
+            </tr>
+            <tr>
+              <td id = "td_2_1">퀸즈 광주유스퀘어점</td>
+              <td id = "td_2_2">062-352-1031</td>
+              <td id = "td_2_3">광주 서구 무진대로 904 유스퀘어(광천터미널) 2층</td>
+              <td id = "td_2_4"></td>
+              <td id = "td_2_5">5</td>
+            </tr>
+            <tr>
+              <td id = "td_2_1">1</td>
+              <td id = "td_2_2">2</td>
+              <td id = "td_2_3">3</td>
+              <td id = "td_2_4">4</td>
+              <td id = "td_2_5">5</td>
+            </tr>
+            <tr>
+              <td id = "td_2_1">1</td>
+              <td id = "td_2_2">2</td>
+              <td id = "td_2_3">3</td>
+              <td id = "td_2_4">4</td>
+              <td id = "td_2_5">5</td>
+            </tr>
+            <tr>
+              <td id = "td_2_1">1</td>
+              <td id = "td_2_2">2</td>
+              <td id = "td_2_3">3</td>
+              <td id = "td_2_4">4</td>
+              <td id = "td_2_5">5</td>
+            </tr>
+            <tr>
+              <td id = "td_2_1">1</td>
+              <td id = "td_2_2">2</td>
+              <td id = "td_2_3">3</td>
+              <td id = "td_2_4">4</td>
+              <td id = "td_2_5">5</td>
+            </tr>
+          </table>
+        </div>
+        <div class = "Area_4">
+          
+        </div>
+        <div class = "Area_5">
+          
+        </div>
+      </div>
+    </Mainmenu>
+  </body>
+</html>
