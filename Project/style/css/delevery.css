@@ -1,19 +1,25 @@
 .top{
-  height:70px;
+  height:60px;
   background-color:#1E3269;
   color:white;
   position:fixed;
   top:0;
   width:100%;
   text-align:center;
+  padding-left: 50;
+}
+a{
+  color: white;
+  text-decoration: none;
 }
 .container{
-  margin-top:100px;
+  margin-top:90px;
   display : flex;
   flex-direction:column;
   border:2px solid black;
-  margin-right:300px;
-  margin-left:300px
+  width:70%;
+  margin-left: 15%;
+  text-align: center;
 }
 .content{
   display:flex;
@@ -28,6 +34,7 @@
 }
 .content table{
   margin:auto;
+  text-align: center;
 }
 .content table, td{
   border-collapse: collapse;
@@ -56,8 +63,8 @@
   background-color:olive;
   color:white;
   height: 50px;
+  width:70%;
   margin:10px 0px;
-  margin-right:300px;
-  margin-left:300px
+
   /*text-align:justify;*/
 }
