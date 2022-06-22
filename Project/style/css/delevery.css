@@ -1,14 +1,14 @@
 .top{
-  height:60px;
+  height:57px;
   background-color:#1E3269;
   color:white;
-  position:fixed;
+  position:absolute;
+  left:0;
   top:0;
   width:100%;
   text-align:center;
-  padding-left: 50;
 }
-a{
+.top a{
   color: white;
   text-decoration: none;
 }
@@ -16,7 +16,6 @@ a{
   margin-top:90px;
   display : flex;
   flex-direction:column;
-  border:2px solid black;
   width:70%;
   margin-left: 15%;
   text-align: center;
@@ -25,12 +24,8 @@ a{
   display:flex;
 }
 .container a{
-  border:1px solid black;
   color : white;
   height:100px;
-}
-.content main{
-  border:1px solid black;
 }
 .content table{
   margin:auto;
@@ -43,17 +38,16 @@ a{
   display:flex;
   flex-direction:column;
   position:fixed;
-  right:130px;
-  height:500px;
+  right:10%;
+  height:400px;
 }
 .content aside a{
-  border:1px solid black;
   color:white;
   margin:1px;
 }
-.bottom footer{
-  margin-right:300px;
-  margin-left:300px
+.info{
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .info a{
   /*padding:10px 0px;*/
@@ -63,8 +57,11 @@ a{
   background-color:olive;
   color:white;
   height: 50px;
-  width:70%;
+  width:100%;
   margin:10px 0px;
+}
 
-  /*text-align:justify;*/
+.bottom footer{
+  margin-right:15%;
+  margin-left:15%;
 }
