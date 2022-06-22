@@ -1,6 +1,6 @@
 .top{
   height:70px;
-  background-color:midnightblue;
+  background-color:#1E3269;
   color:white;
   position:fixed;
   top:0;
@@ -26,6 +26,12 @@
 .content main{
   border:1px solid black;
 }
+.content table{
+  margin:auto;
+}
+.content table, td{
+  border-collapse: collapse;
+}
 .content aside{
   display:flex;
   flex-direction:column;
@@ -43,12 +49,15 @@
   margin-left:300px
 }
 .info a{
+  /*padding:10px 0px;*/
   display:flex;
   flex-direction:column;
   border:1px solid olive;
   background-color:olive;
   color:white;
-  margin:10px;
+  height: 50px;
+  margin:10px 0px;
   margin-right:300px;
   margin-left:300px
+  /*text-align:justify;*/
 }
